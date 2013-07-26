@@ -1,6 +1,15 @@
 # StarkBot-Flowdock
 
+StarkBot is a bot that connects to Flowdock Stream API, and interacts with connected users.
+It includes a system of plugins (handlers) to extend its capabilities.
+
 This bot is based on [https://github.com/shatsar/flowbot](https://github.com/shatsar/flowbot) and uses the same handler behaviour.
+
+However, some things have been improved:
+* boot via rake task
+* autoreconnect to flowdock stream api
+* added basic interaction with flowdock api (push message to flow / team inbox, get a user nickname)
+* added some basic handlers
 
 ## Requirements
 
