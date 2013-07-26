@@ -1,0 +1,15 @@
+# Flowdock admins user_id
+@@hlds_admins = ["12345", "67890"]
+
+# HLDS Servers
+#
+# ==== Attributes
+#
+# * +ip+ - HLDS server IP
+# * +port+ - HLDS server port
+# * +is_hltv+ - HLDS server to false, HLTV to true
+# * +pwd+ - HLDS RCON password
+@@hlds_servers  = [
+  ['192.168.4.189', '27015', false, 'my_rcon_pass'],
+  ['192.168.4.189', '27016', false, 'my_rcon_pass']
+]

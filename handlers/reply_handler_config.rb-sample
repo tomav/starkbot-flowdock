@@ -1,0 +1,9 @@
+    @@reply_content = {
+      "#fail"           => "http://media3.giphy.com/media/12p3JXHJBgqqCk/original.gif",
+      "#clapclapclap"   => "http://media2.giphy.com/media/GVQILkMZzI8nu/giphy.gif",
+      "#congrats"       => "http://media3.giphy.com/media/Vm1fTgm9E3wrK/giphy.gif",
+      "#ihaveanidea"    => "http://media3.giphy.com/media/CI6hQq7NgmCqI/original.gif",
+      "#itsworking"     => "http://media0.giphy.com/media/4wP2fWiCXLCyQ/giphy.gif",
+      "#thumbup"        => "http://media0.giphy.com/media/4GRRBtKrdiFDa/original.gif",
+      "#undercontrol"   => "http://media3.giphy.com/media/D8WieWPMCGsA8/giphy.gif"
+    }

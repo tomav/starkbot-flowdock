@@ -1,0 +1,8 @@
+$username      = "StarkBot"
+$organization  = "mycompany"
+$token         = "01234567890123456789012345678912"
+$flows         = {
+  "flow1"     => "01234567890123456789012345678912",
+  "flow2"     => "01234567890123456789012345678912"
+}
+$plugins       = ['BaseHandler', 'ConsoleHandler']
