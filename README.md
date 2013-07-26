@@ -1,4 +1,4 @@
-# StarkBot
+# StarkBot-Flowdock
 
 This bot is based on [https://github.com/shatsar/flowbot](https://github.com/shatsar/flowbot) and uses the same handler behaviour.
 
