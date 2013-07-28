@@ -58,10 +58,9 @@ class RconHandler < BaseHandler
     else
       begin
         server.rcon_auth(pwd)
-        status  = server.rcon_exec('status')
-        hostname  = status.split(/\r?\n/)[0].gsub('hostname:  ', '')
-        players = status.split(/\r?\n/)[4].gsub('players :  ', '')
-        return "#{hostname} => #{players}"
+        status    = server.rcon_exec('status')
+        hostname, map, players = status.gsub(/\r?\n/, '').match(/^hostname: (.+)version.*map     :  (.+) at.+players : (.+)#  /).captures
+        return "#{hostname} / #{map} / #{players}"
       rescue
         return 'Unknown command or authentication issue.'
       end
