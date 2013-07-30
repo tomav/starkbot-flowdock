@@ -30,11 +30,11 @@ class RconHandler < BaseHandler
         content = get_status(ip, port, is_hltv, pwd)
         say(get_token(message["flow"]), content)
       end
-    elsif message["content"].match(/!rcon([1-2])/)
+    elsif message["content"].match(/!rcon(\d+)/)
       if @@hlds_admins.include?(message["user"])
         server, command = message["content"].match(/^!rcon(\d.)(.*)$/i).captures
-        ip, port = @@hlds_servers[server.to_i-1][0], @@hlds_servers[server.to_i-1][1]
-        content = rcon_exec(ip, port, is_hltv, command)
+        ip, port, is_hltv, pwd = @@hlds_servers[server.to_i-1][0], @@hlds_servers[server.to_i-1][1], @@hlds_servers[server.to_i-1][2], @@hlds_servers[server.to_i-1][3]
+        content = rcon_exec(ip, port, is_hltv, pwd, command)
         say(get_token(message["flow"]), content)
       elsif message["user"] == "0"
         # bot himself
